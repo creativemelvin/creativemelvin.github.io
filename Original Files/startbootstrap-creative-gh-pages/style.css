@@ -1,0 +1,95 @@
+a {
+	color: #1479cc;
+}
+
+a:focus, a:hover {
+    color: #1900da;
+}
+
+.border-box{
+  /*border: 1px solid #ccc;*/
+  /*padding: 10px;*/
+  margin-bottom: 15px;
+}
+
+.top-bg {
+    background-color: rgba(47,47,47,0.6);
+}
+
+.navbar-brand {
+	color: #fff;
+}
+
+.blue-btn{
+	background-color: #177dc5;
+}
+
+.blue-btn:hover, .blue-btn:active, .blue-btn:focus{
+	background-color: #085aef;
+}
+
+header .header-content .header-content-inner h1 {
+	text-transform: none;
+}
+
+.bg-primary {
+	background-color: #3181b9;
+}
+
+.light {
+    border-color: #fff;
+}
+
+.text-primary {
+    color: #383838;
+}
+
+.portfolio-bg{
+	background: #f2f2f2;
+}
+
+#contact {
+    background: #111;
+    color: #fff;
+}
+
+hr {
+    border-color: #7b7b7b;
+}
+
+.portfolio-box .portfolio-box-caption{
+	background: rgba(53, 53, 53, 0.7);
+} 
+
+@media (min-width: 768px){
+	.navbar-default.affix .navbar-header .navbar-brand {
+	    color: #3181b9;
+	    font-size: 14px;
+	}
+
+	 .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
+	 	color: #3181b9 ;
+	 }
+
+	header .header-content .header-content-inner h1 {
+	    font-size: 60px;
+	}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    .top-bg {
+	    background-color:#fff;
+	}
+
+	.navbar-default .navbar-header .navbar-brand {
+	    color: #3181b9;
+	    font-size: 14px;
+	}
+
+	.navbar-default .navbar-header .navbar-brand:focus, .navbar-default .navbar-header .navbar-brand:hover {
+		color: #3181b9 ;
+	}	
+
+}
