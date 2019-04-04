@@ -61,6 +61,11 @@ hr {
 	background: rgba(53, 53, 53, 0.7);
 } 
 
+.portContent {
+	padding: 10px 0 25px 0;
+	text-align: center;
+}
+
 @media (min-width: 768px){
 	.navbar-default.affix .navbar-header .navbar-brand {
 	    color: #3181b9;
