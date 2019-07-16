@@ -62,9 +62,40 @@ hr {
 } 
 
 .portContent {
-	padding: 10px 0 25px 0;
+	padding: 10px 0 35px 0;
 	text-align: center;
 }
+
+.portlink a:hover, .portlink a:active, .portlink a:visited, .portlink a:focus {
+    text-decoration: none;
+}
+
+.portlink {
+    margin: 0;
+}
+
+.portlink a {
+    border: 1px solid #1479cc;
+    border-radius: 21px;
+    padding: 10px 20px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.portlink a:hover {
+    background-color: #2483c5;
+    color: #fff;
+    border-color: #268cd4;
+}
+
+.portTitleSize {
+	margin-top: 5px;
+}
+
+
+
 
 @media (min-width: 768px){
 	.navbar-default.affix .navbar-header .navbar-brand {
