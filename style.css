@@ -6,10 +6,46 @@ a:focus, a:hover {
     color: #1900da;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('/fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Light';
+    src: url('/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('/fonts/Poppins-Bold.ttf');
+}
+
+body {
+  font-family: "Poppins Light", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
 .border-box{
-  /*border: 1px solid #ccc;*/
-  /*padding: 10px;*/
-  margin-bottom: 15px;
+ text-align: center;
 }
 
 .top-bg {
@@ -21,7 +57,8 @@ a:focus, a:hover {
 }
 
 .blue-btn{
-	background-color: #177dc5;
+	/* background-color: #177dc5; */
+	background-color: #3985e9;
 }
 
 .blue-btn:hover, .blue-btn:active, .blue-btn:focus{
@@ -32,8 +69,39 @@ header .header-content .header-content-inner h1 {
 	text-transform: none;
 }
 
+
+.aboutParagraph p {
+	margin-bottom: 30px;
+	line-height: 24px;
+}
+
+.AboutSpacing {
+    padding: 0 73px;
+}
+
+.overideClose {
+    font-size: 55px;
+    opacity: unset;
+    color: #fff;	
+}
+
+.modalHeaderResize {
+	padding: 5px;
+}
+
+
+
 .bg-primary {
-	background-color: #3181b9;
+	background: #3985e9 !important;
+	/* background-color: #3181b9; */
+}
+
+.colorBTN {
+    color: #3985e9;
+}
+
+.colorBTN:hover {
+	color: #085aef;
 }
 
 .light {
@@ -45,7 +113,39 @@ header .header-content .header-content-inner h1 {
 }
 
 .portfolio-bg{
-	background: #f2f2f2;
+	background: #f5f7fa;
+	/* background: #f2f2f2; */
+}
+
+
+/* Demo Videos */
+
+.demoVideo:focus {
+	outline: none;
+}
+
+.modal-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 5px;
+}
+
+.hdVideoSize{
+	width: 275px; 
+	height: auto;
+}
+
+.ckVideoSize {
+	width: 100%; 
+	height: auto;
 }
 
 #contact {
@@ -59,11 +159,19 @@ hr {
 
 .portfolio-box .portfolio-box-caption{
 	background: rgba(53, 53, 53, 0.7);
-} 
+}
+
+.icon-color {
+	color: #141920;
+}
 
 .portContent {
 	padding: 10px 0 35px 0;
 	text-align: center;
+}
+
+.portContent p {
+	margin-bottom: 35px;
 }
 
 .portlink a:hover, .portlink a:active, .portlink a:visited, .portlink a:focus {
@@ -76,12 +184,11 @@ hr {
 
 .portlink a {
     border: 1px solid #1479cc;
-    border-radius: 21px;
+    border-radius: 60px;
     padding: 10px 20px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
-
+	font-size: 14px;
 }
 
 .portlink a:hover {
@@ -94,12 +201,47 @@ hr {
 	margin-top: 5px;
 }
 
+/* .portContentHeight {
+    height: 243px;
+    position: relative;
+}*/
 
+.portContentHeight .portlink {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+	right: 0; */
+	margin-bottom: 35px;
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 1200px) {
+	/* .portContentHeight {
+		height: 100%;
+	}	
+
+	.portContentHeight .portlink {
+		position: static;
+	} */
+
+	.AboutSpacing {
+		padding: 0 0;
+	}
+
+}
+
+@media screen and (max-width: 1200px)  and (min-width: 768px) {
+	.portlink a{
+		display: block;
+	}
+}
 
 
 @media (min-width: 768px){
 	.navbar-default.affix .navbar-header .navbar-brand {
-	    color: #3181b9;
+	    color: #3985e9;
 	    font-size: 14px;
 	}
 
