@@ -1,12 +1,12 @@
 a {
-	color: #1479cc;
+	color: #6366F1;
 }
 
 a:focus, a:hover {
     color: #1900da;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Roboto';
     src: url('/fonts/Roboto-Regular.ttf');
 }
@@ -29,10 +29,10 @@ a:focus, a:hover {
 @font-face {
     font-family: 'Poppins Bold';
     src: url('/fonts/Poppins-Bold.ttf');
-}
+}*/
 
 body {
-  font-family: "Poppins Light", Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -41,7 +41,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.h2, h2 {
+    font-size: 32px;
 }
 
 .border-box{
@@ -57,8 +61,9 @@ h6 {
 }
 
 .blue-btn{
-	/* background-color: #177dc5; */
-	background-color: #3985e9;
+	background-color: #6366F1;
+	text-transform: none;
+	font-size: 16px;
 }
 
 .blue-btn:hover, .blue-btn:active, .blue-btn:focus{
@@ -69,9 +74,13 @@ header .header-content .header-content-inner h1 {
 	text-transform: none;
 }
 
+header .header-content .header-content-inner p {
+	color: rgba(255, 255, 255, 0.9);
+}
+
 
 .aboutParagraph p {
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 	line-height: 24px;
 }
 
@@ -97,7 +106,9 @@ header .header-content .header-content-inner h1 {
 }
 
 .colorBTN {
-    color: #3985e9;
+    color: #6366F1;
+    text-transform: none;
+    font-size: 16px;
 }
 
 .colorBTN:hover {
@@ -111,6 +122,10 @@ header .header-content .header-content-inner h1 {
 .text-primary {
     color: #383838;
 }
+
+.text-muted {
+    color: #5a5555;
+	}
 
 .portfolio-bg{
 	background: #f5f7fa;
@@ -149,12 +164,16 @@ header .header-content .header-content-inner h1 {
 }
 
 #contact {
-    background: #111;
+    background: #1c1c1c;
     color: #fff;
 }
 
 hr {
     border-color: #7b7b7b;
+}
+
+.hr-primary {
+	margin-bottom: 32px;
 }
 
 .portfolio-box .portfolio-box-caption{
@@ -171,7 +190,7 @@ hr {
 }
 
 .portContent p {
-	margin-bottom: 35px;
+	margin-bottom: 32px;
 }
 
 .portlink a:hover, .portlink a:active, .portlink a:visited, .portlink a:focus {
@@ -183,22 +202,24 @@ hr {
 }
 
 .portlink a {
-    border: 1px solid #1479cc;
+    border: 1px solid #6366F1;
     border-radius: 60px;
     padding: 10px 20px;
     font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
+    text-transform: none;
 	font-size: 14px;
+	font-weight: 600;
 }
 
 .portlink a:hover {
-    background-color: #2483c5;
+    background-color: #085aef;
     color: #fff;
-    border-color: #268cd4;
+    border-color: #085aef;
 }
 
 .portTitleSize {
-	margin-top: 5px;
+	margin: 8px 0 16px 0;
+	font-size: 20px;
 }
 
 /* .portContentHeight {
@@ -212,6 +233,14 @@ hr {
     left: 0;
 	right: 0; */
 	margin-bottom: 35px;
+}
+
+.navbar-default .nav > li.active > a, .navbar-default .nav > li.active > a:focus {
+		color: #085aef !important;
+}
+
+.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus:hover {
+	color: #085aef !important;		
 }
 
 
@@ -240,6 +269,14 @@ hr {
 
 
 @media (min-width: 768px){
+	.navbar-default .navbar-header .navbar-brand{
+		color: #ffffff;
+	}
+
+	.navbar-default .nav > li > a {
+		color: #ffffff;
+	}
+
 	.navbar-default.affix .navbar-header .navbar-brand {
 	    color: #3985e9;
 	    font-size: 14px;
@@ -247,6 +284,10 @@ hr {
 
 	 .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
 	 	color: #3181b9 ;
+	 }
+
+	 .navbar-default.affix .nav > li > a:hover, .navbar-default.affix .nav > li > a:focus:hover {
+	 	color: #085aef;
 	 }
 
 	header .header-content .header-content-inner h1 {
